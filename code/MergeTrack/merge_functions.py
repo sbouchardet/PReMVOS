@@ -506,7 +506,7 @@ pascal_colormap = [
     0.8784,    0.8784,    0.7529]
 
 def save_with_pascal_colormap(filename, arr):
-  colmap = (np.array(pascal_colormap) * 255).round().astype("uint8")
+  colmap = (np.array(pascal_colormap) * 255).round().astype("int8")
   palimage = Image.new('P', (16, 16))
   palimage.putpalette(colmap)
   im = Image.fromarray(np.squeeze(arr.astype("uint8")))

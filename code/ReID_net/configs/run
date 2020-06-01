@@ -12,8 +12,8 @@
 "task": "forward_ReID",
 "dataset": "davis_forward_similarity",
 
-"batch_size": 256,
-"batch_size_eval": 256,
+"batch_size": 16,
+"batch_size_eval": 16,
 "log_verbosity": 5,
 "gpus": [0],
 "optimizer": "adam",
